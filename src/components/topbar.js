@@ -9,6 +9,9 @@ const styles = theme => ({
     root: {
       width: '100%',
     },
+    appBar :{
+      boxShadow : '0px 5px 5px #623fc1'
+    },
     grow: {
       flexGrow: 1,
     },

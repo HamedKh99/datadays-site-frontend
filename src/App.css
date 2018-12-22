@@ -7,6 +7,17 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: ParastooBold;
+  src: url('./fonts/Parastoo-Bold.eot');
+  src: url('./fonts/Parastoo-Bold.eot') format('embedded-opentype'),
+       url('./fonts/Parastoo-Bold.woff') format('woff'),
+       url('./fonts/Parastoo-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+
+
 .App {
   font-family: Parastoo
 }
