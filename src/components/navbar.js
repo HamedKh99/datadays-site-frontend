@@ -11,7 +11,8 @@ const styles = theme => ({
         
     },
     navbarItem : {
-        fontFamily : 'Parastoo',
+        fontFamily : 'ParastooBold',
+        fontSize : '12px',
         textAlign : 'center',
         padding : '5px 10px',
         borderRadius : '10px',

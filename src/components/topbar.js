@@ -53,7 +53,8 @@ const styles = theme => ({
       width: '100%',
     },
     inputInput: {
-      fontFamily : 'Parastoo',  
+      fontFamily : 'Parastoo',
+      fontSize : '12px',  
       paddingTop: theme.spacing.unit,
       paddingRight: theme.spacing.unit,
       paddingBottom: theme.spacing.unit,
@@ -78,7 +79,7 @@ class TopBar extends Component {
         const { classes } = this.props;
         return (
             <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position='fixed'>
                 <Toolbar>
                 <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
                     <MenuIcon />

@@ -6,7 +6,7 @@ const styles = theme => ({
         backgroundColor : "#d9d0f2",
         display : 'flex',
         justifyContent : 'space-around',
-        padding : '20px',
+        paddingTop : '60px',
         boxShadow : '0px 5px 5px grey'
     },
     logo : {

@@ -7,7 +7,6 @@ const styles = theme => ({
         backgroundColor : "#d9d0f2",
         display : 'flex',
         justifyContent : 'center',
-        // alignContent : 'center'
     },
 })
 

@@ -3,6 +3,8 @@ import './App.css';
 import LogoBanner from './components/logoBanner'
 import TopBar from './components/topbar'
 import TabBox from './components/tabbox'
+import Prizes from './components/prizes';
+import SponsorSSC from './components/sponsorSSC'
 
 
 class App extends Component {
@@ -12,6 +14,8 @@ class App extends Component {
         <TopBar/>
         <LogoBanner/>
         <TabBox/>
+        <Prizes/>
+        <SponsorSSC/>
       </div>
     );
   }
