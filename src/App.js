@@ -5,6 +5,7 @@ import TopBar from './components/topbar'
 import TabBox from './components/tabbox'
 import Prizes from './components/prizes';
 import SponsorSSC from './components/sponsorSSC'
+import Schedule from './components/schedule';
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <LogoBanner/>
         <TabBox/>
         <Prizes/>
+        <Schedule/>
         <SponsorSSC/>
       </div>
     );

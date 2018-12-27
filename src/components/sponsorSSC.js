@@ -7,7 +7,6 @@ const styles = theme => ({
         display : 'flex',
         justifyContent : 'space-around',
         flexDirection : 'row',
-        backgroundColor : "#d9d0f2",
         marginTop : theme.spacing.unit
     },
     card : {
