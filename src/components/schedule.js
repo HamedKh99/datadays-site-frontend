@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
-import { withStyles, Stepper, Step, StepButton, StepConnector } from '@material-ui/core';
+import { withStyles, Stepper, Step, StepButton, StepConnector, StepIcon, StepLabel } from '@material-ui/core';
+import { toPersianNum } from '../utils/persian';
 import '../App.css'
+import ScheduleCard from './scheduleCard';
 
 const styles = theme => ({
     container : {
@@ -36,6 +38,10 @@ const styles = theme => ({
     connectorLine: {
         transition: theme.transitions.create('border-color'),
     },
+    stepIcon : {
+        width : '16px',
+        height : '16px'
+    }
 })
 
 class Schedule extends Component {
@@ -47,7 +53,7 @@ class Schedule extends Component {
     }
 
     getSteps = () => {
-        return ['مرحله 1', 'مرحله 2', 'مرحله 3']
+        return ['مرحله' + toPersianNum(1),'مرحله' + toPersianNum(2),'مرحله' + toPersianNum(3)]
     }
 
     handleStep = step => () => {
@@ -67,10 +73,13 @@ class Schedule extends Component {
               }}
             />
         );
+        const stepIcon = (
+            <img className={classes.stepIcon} src={require('../images/diamond.png')}/>
+        )
         return(
             <div className={classes.container}>
                 <h2>برنامه</h2>
-                {/* <PersianNumber>5</PersianNumber> */}
+                <ScheduleCard num={this.state.activeStep + 1}/>
                 <Stepper className={classes.stepper} nonLinear activeStep={this.state.activeStep} connector={connector}>
                     {steps.map((label, index) => {
                         return(
@@ -78,7 +87,11 @@ class Schedule extends Component {
                                 <StepButton
                                     onClick={this.handleStep(index)}
                                 >
-                                    <span className={classes.stepText}>{label}</span>
+                                    <StepLabel
+                                        StepIconProps={{icon : stepIcon}}
+                                    >
+                                        <span className={classes.stepText}>{label}</span>
+                                    </StepLabel>
                                 </StepButton>
                             </Step>
                         )
