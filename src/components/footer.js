@@ -18,7 +18,7 @@ const styles = theme => ({
     },
     contact : {
         display : 'flex',
-        justifyContent : 'space-around',
+        justifyContent : 'space-between',
         alignItems : 'center',
         width : '100%'
     },
