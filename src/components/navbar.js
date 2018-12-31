@@ -35,7 +35,7 @@ class Navbar extends Component {
             <nav className={classes.navbar}>
                 <a href='/' className={classes.navbarItem}>صفحه اصلی</a>
                 <a href='/' className={classes.navbarItem}>بلاگ</a>
-                <a href='/' className={classes.navbarItem}>تماس با ما</a>
+                <a href='/' className={classes.navbarItem}>تیم برگزاری</a>
             </nav>
         )
     }
