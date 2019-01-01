@@ -27,8 +27,8 @@ class LogoBanner extends Component {
         const {classes} = this.props
         return(
             <div className={classes.container}>
-                <img className={classes.logo} src={require('../images/logo.png')}/>
-                <p className={classes.text}>متن</p>
+                {/* <img className={classes.logo} src={require('../images/logo.png')}/> */}
+                <p className={classes.text}>پوستر</p>
             </div>
         )
     }

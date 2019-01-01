@@ -4,6 +4,12 @@ import '../App.css';
 
 
 const styles = theme => ({
+    container : {
+        width : '100%',
+        padding : '20px',
+        display : 'flex',
+        justifyContent : 'center'
+    },
     paper: {
         ...theme.mixins.gutters(),
         paddingBottom: theme.spacing.unit * 2,
@@ -22,10 +28,13 @@ class IntroduceTabContent extends Component {
     render() {
         const {classes} = this.props
         return(
-            <Paper className={classes.paper}>
-                <h2 className={classes.title}>تیتر</h2>
-                <p>توضیح توضیح توضیح</p>
-            </Paper>
+            <div className={classes.container}>
+                <Paper className={classes.paper}>
+                    <h2 className={classes.title}>تیتر</h2>
+                    <p>توضیح توضیح توضیح</p>
+                </Paper>
+            </div>
+            
         )
     }
 }

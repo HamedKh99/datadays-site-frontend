@@ -4,10 +4,12 @@ import FeatureCard from './featureCard'
 
 const styles = theme => ({
     container : {
-        width : '50%',
+        width : '100%',
         display : 'flex',
         flexDirection : 'row',
-        justifyContent : 'space-between'
+        justifyContent : 'space-around',
+        backgroundColor : '#d9d0f2',
+        padding : '20px 0px'
     }
 })
 
